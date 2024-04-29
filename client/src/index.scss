@@ -103,7 +103,7 @@ body,
   }
 
   .login-container {
-   
+
     color: $tertiary-50;
     height: 80%;
     width: 50%;
@@ -117,24 +117,24 @@ body,
     display: flex;
     width: 55%;
     justify-content: flex-end;
-    
+
   }
 
-  .login-actions > button{
+  .login-actions>button {
     height: 40px;
     width: 90px;
     border-radius: 5px;
     border: none;
-    font-weight:bold;
+    font-weight: bold;
     background-color: #e3dddd;
     font-size: medium;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   cursor: pointer;
+    cursor: pointer;
   }
 
 
   .login-input {
-    
+
     display: flex;
     width: 26rem;
     height: 40px;
