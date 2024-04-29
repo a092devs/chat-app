@@ -28,12 +28,20 @@ const StandardMessageForm = ({props, activeChat}) => {
         setAttachment('');
     };
 
+    const handleKeyDown = (event) => {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            handleSubmit();
+        }
+    };
+
     return (
         <MessageFormUI
             setAttachment={setAttachment}
             message={message}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
+            handleKeyDown={handleKeyDown}
         />
     );
 };

@@ -58,9 +58,12 @@ const AiAssist = ({props, activeChat}) => {
 
     const handleKeyDown = (e) => {
         // handle enter and tab
-        if (e.keyCode === 9 || e.keyCode === 13) {
+        if (e.keyCode === 9) {
             e.preventDefault();
-            setMessage(`${message} ${appendText}`);
+            setMessage(`${message}${appendText}`);
+        } else if (e.keyCode === 13) {
+            e.preventDefault();
+            handleSubmit();
         }
         setAppendText('');
     };
@@ -70,6 +73,7 @@ const AiAssist = ({props, activeChat}) => {
             setAppendText(resultAssist.data?.text);
         }
     }, [resultAssist]);
+
     return (
         <MessageFormUI
             setAttachment={setAttachment}
