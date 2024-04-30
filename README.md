@@ -91,7 +91,7 @@ npm run dev
 npm run dev
 ```
 
-13. Open the app in your browser at `http://localhost:3000`
+13. Open the app in your browser at `http://localhost:5173`
 
 ## Credits
 
