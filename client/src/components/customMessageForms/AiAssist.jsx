@@ -60,7 +60,7 @@ const AiAssist = ({props, activeChat}) => {
         // handle enter and tab
         if (e.keyCode === 9) {
             e.preventDefault();
-            setMessage(`${message}${appendText}`);
+            setMessage(`${message} ${appendText}`);
         } else if (e.keyCode === 13) {
             e.preventDefault();
             handleSubmit();

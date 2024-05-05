@@ -226,7 +226,8 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: auto;
+  min-height: 100px;
   gap: 8px;
 }
 

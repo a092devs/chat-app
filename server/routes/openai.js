@@ -93,7 +93,7 @@ router.post('/assist', async (req, res) => {
                     content:
                         "You are a helpful assistant that serves to only complete user's thoughts or sentences.",
                 },
-                {role: 'user', content: `Finish my thought: ${text}`},
+                {role: 'user', content: `Finish my thought:${text}`},
             ],
         });
 
