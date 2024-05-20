@@ -9,8 +9,6 @@ const Login = ({setUser, setSecret}) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [profileImage, setProfileImage] = useState(null);
-    const [profileImageName, setProfileImageName] = useState(''); // New state to store the uploaded image filename
     const [passwordMismatch, setPasswordMismatch] = useState(false);
     const [mandatoryPopup, setMandatoryPopup] = useState(false); // Popup for mandatory fields
     const [requiredFields, setRequiredFields] = useState([]);
@@ -25,7 +23,7 @@ const Login = ({setUser, setSecret}) => {
     const handleRegister = () => {
         if (password === confirmPassword) {
             const missingFields = requiredFields.filter(
-                (field) => !eval(field)
+                (field) => !JSON.parse(field)
             );
             if (missingFields.length === 0) {
                 triggerSignUp({
