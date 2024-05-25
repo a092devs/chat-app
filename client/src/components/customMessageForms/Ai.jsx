@@ -13,7 +13,7 @@ const Ai = ({props, activeChat}) => {
         const date = new Date()
             .toISOString()
             .replace('T', ' ')
-            .replace('Z', `${Math.floor(Math.random() * 1000)}+00:00`);
+            .replace('Z', '+05:30');
         const at = attachment
             ? [{blob: attachment, file: attachment.name}]
             : [];
