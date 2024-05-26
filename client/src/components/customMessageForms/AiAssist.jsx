@@ -30,7 +30,7 @@ const AiAssist = ({props, activeChat}) => {
         const date = new Date()
             .toISOString()
             .replace('T', ' ')
-            .replace('Z', '+05:30');
+            .replace('Z', '+00:00');
         const at = attachment
             ? [{blob: attachment, file: attachment.name}]
             : [];
