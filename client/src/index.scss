@@ -72,21 +72,20 @@ body,
     cursor: pointer;
   }
 
-  
-   
+
+
 }
 
 .login-page {
   // border: 2px solid red;
   // background-color: $primary-500;
-  background-image: url(../public/project-background.png);
+  background-image: url(@/assets/bg.png);
   background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 
   .upload-profile {
     margin-top: 10px;
@@ -108,10 +107,10 @@ body,
   }
 
   .login-container {
-  backdrop-filter: blur(15px);
-   border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
     color: $tertiary-50;
-    height:35rem;
+    height: 35rem;
     width: 30rem;
     display: flex;
     flex-direction: column;
@@ -119,7 +118,7 @@ body,
     align-items: center;
     box-shadow: rgba(0, 255, 255, 0.89) 0px 0px 5px 2px, rgba(2, 255, 255, 0.885) 0px 4px 6px -1px, rgba(2, 247, 251, 0.921) 0px 1px 0px inset;
   }
-  
+
   //  sign-up and login page css
   .login-actions {
     display: flex;
@@ -127,7 +126,7 @@ body,
     justify-content: flex-end;
   }
 
-  .login-actions > button {
+  .login-actions>button {
     --color: rgba(7, 229, 245, 0.886);
     padding: 0.5em 1em;
     background-color: transparent;
@@ -143,9 +142,10 @@ body,
     text-transform: uppercase;
     color: var(--color);
     z-index: 1;
-   }
-   
-   button::before, button::after {
+  }
+
+  button::before,
+  button::after {
     content: '';
     display: block;
     width: 50px;
@@ -156,35 +156,33 @@ body,
     z-index: -1;
     background-color: var(--color);
     transition: 1s ease;
-   }
-   
-   button::before {
+  }
+
+  button::before {
     top: -1em;
     left: -1em;
-   }
-   
-   button::after {
+  }
+
+  button::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
-   }
-   
-   button:hover::before, button:hover::after {
+  }
+
+  button:hover::before,
+  button:hover::after {
     height: 410px;
     width: 410px;
-   }
-   
-   button:hover {
-    color: rgb(10, 25, 30);
-   }
-   
-   button:active {
-    filter: brightness(.8);
-   }
- 
+  }
 
+  button:hover {
+    color: rgb(10, 25, 30);
+  }
+
+  button:active {
+    filter: brightness(.8);
+  }
 
   .login-input {
-    
     display: flex;
     width: 26rem;
     height: 40px;
@@ -193,12 +191,12 @@ body,
     padding: 0 10px;
     margin: 10px 0;
     // background-color: $primary-600;
-     box-shadow: rgba(35, 146, 146, 0.433) 0px 40px 90px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+    box-shadow: rgba(35, 146, 146, 0.433) 0px 40px 90px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    ;
     color: $primary-800;
-    
   }
-  .login-input:focus{
-   
+
+  .login-input:focus {
     outline: none !important;
     border-color: cyan;
     box-shadow: 0 0 5px cyan;
@@ -220,7 +218,6 @@ body,
 .ce-chat-engine {
   color: $tertiary-50 !important;
   font-family: "Rubik" !important;
-  
 }
 
 /* Chat List */
@@ -257,11 +254,6 @@ body,
   color: $tertiary-50 !important;
   width: 25px !important;
   height: 25px !important;
-}
-
-.icon-phone {
-  width: 16px !important;
-  height: 16px !important;
 }
 
 .icon-chat {
